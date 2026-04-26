@@ -29,8 +29,6 @@ playwright-saucedemo/
 ├── playwright.config.ts
 └── README.md
 
-text
-
 ## 🚀 Cara Menjalankan
 
 ### 1. Clone repositori
@@ -38,22 +36,28 @@ text
 ```bash
 git clone https://github.com/username/playwright-saucedemo.git
 cd playwright-saucedemo
-2. Install dependensi
-bash
+```
+## 2. Install dependensi
+```bash
 npm install
 npx playwright install
-3. Menjalankan semua pengujian
-bash
+```
+## 3. Menjalankan semua pengujian
+```bash
 npx playwright test
-4. Menjalankan pengujian dengan mode UI (Playwright Trace Viewer)
-bash
+```
+## 4. Menjalankan pengujian dengan mode UI (Playwright Trace Viewer)
+```bash
 npx playwright test --ui
-5. Menjalankan pengujian spesifik
-bash
+```
+## 5. Menjalankan pengujian spesifik
+```bash
 npx playwright test login.spec.ts
-6. Melihat laporan pengujian
-bash
+```
+## 6. Melihat laporan pengujian
+```bash
 npx playwright show-report
+```
 ⚙️ Konfigurasi
 File playwright.config.ts sudah dikonfigurasi untuk:
 
@@ -64,6 +68,7 @@ Mode headless by default (bisa diubah menjadi headless: false untuk debugging)
 Screenshot dan trace otomatis saat pengujian gagal
 
 🧾 Contoh Kode Pengujian
+```bash
 typescript
 import { test, expect } from '@playwright/test';
 import { LoginPage } from '../pages/loginPage';
@@ -74,6 +79,7 @@ test('Login dengan user standard berhasil', async ({ page }) => {
   await loginPage.login('standard_user', 'secret_sauce');
   await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html');
 });
+```
 📊 Laporan & Debugging
 Trace Viewer: npx playwright show-trace trace.zip
 
