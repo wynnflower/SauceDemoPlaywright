@@ -1,0 +1,21 @@
+[
+    {
+        "testName": "Pembelian Backpack & Bolt T-Shirt",
+        "items": [
+            "Sauce Labs Backpack",
+            "Sauce Labs Bolt T-Shirt"
+        ],
+        "firstName": "F2Piko",
+        "lastName": "ID",
+        "postalCode": "12345"
+    },
+    {
+        "testName": "Pembelian Onesie Saja",
+        "items": [
+            "Sauce Labs Onesie"
+        ],
+        "firstName": "Gamer",
+        "lastName": "Retro",
+        "postalCode": "54321"
+    }
+]

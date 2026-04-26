@@ -1,0 +1,27 @@
+[
+    {
+        "username": "standard_user",
+        "password": "secret_sauce",
+        "description": "User normal",
+        "shouldSucceed": true
+    },
+    {
+        "username": "problem_user",
+        "password": "secret_sauce",
+        "description": "User dengan masalah visual",
+        "shouldSucceed": true
+    },
+    {
+        "username": "performance_glitch_user",
+        "password": "secret_sauce",
+        "description": "User dengan kendala performa",
+        "shouldSucceed": true
+    },
+    {
+        "username": "locked_out_user",
+        "password": "secret_sauce",
+        "description": "User yang loginnya dikunci",
+        "shouldSucceed": false,
+        "expectedError": "Epic sadface: Sorry, this user has been locked out."
+    }
+]
