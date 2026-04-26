@@ -13,6 +13,8 @@ Proyek ini berisi skenario pengujian otomatis (end-to-end) untuk website [SauceD
 - 🚪 Logout dari aplikasi
 
 ## 📁 Struktur Proyek
+
+```bash
 playwright-saucedemo/
 ├── tests/
 │ ├── login.spec.ts
@@ -28,6 +30,7 @@ playwright-saucedemo/
 │ └── testData.json
 ├── playwright.config.ts
 └── README.md
+```
 
 ## 🚀 Cara Menjalankan
 
@@ -69,7 +72,6 @@ Screenshot dan trace otomatis saat pengujian gagal
 
 🧾 Contoh Kode Pengujian
 ```bash
-typescript
 import { test, expect } from '@playwright/test';
 import { LoginPage } from '../pages/loginPage';
 
@@ -82,16 +84,12 @@ test('Login dengan user standard berhasil', async ({ page }) => {
 ```
 📊 Laporan & Debugging
 Trace Viewer: npx playwright show-trace trace.zip
-
 HTML Report: otomatis terbuat di folder test-results/
-
 Screenshot: disimpan saat pengujian gagal
 
 🧰 Tools yang Digunakan
 Playwright – Testing framework
-
 TypeScript – Bahasa pemrograman
-
 Node.js – Runtime environment
 
 📌 Catatan
