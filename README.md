@@ -17,17 +17,21 @@ Proyek ini berisi skenario pengujian otomatis (end-to-end) untuk website [SauceD
 ```bash
 playwright-saucedemo/
 ├── tests/
-│ ├── login.spec.ts
-│ ├── cart.spec.ts
-│ ├── checkout.spec.ts
-│ └── filter.spec.ts
+│ ├── accessibility.spec.js
+│ ├── api-test.spec.js
+│ ├── ddt-login.spec.js
+│ ├── delay-test.spec.js
+│ ├── e2e-checkout.spec.js
+│ ├── fast-login.spec.js
+│ ├── final-project.spec.js
+│ ├── iframe-tab.spec.js
+│ ├── login.spec.js
+│ ├── mobile.spec.js
+│ └── visual.spec.js
 ├── pages/
-│ ├── loginPage.ts
-│ ├── inventoryPage.ts
-│ ├── cartPage.ts
-│ └── checkoutPage.ts
-├── fixtures/
-│ └── testData.json
+│ ├── CheckoutPage.js
+│ ├── InventoryPage.js
+│ └── LoginPage.js
 ├── playwright.config.ts
 └── README.md
 ```
